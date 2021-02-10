@@ -10,10 +10,6 @@ end
 RSpec.describe Card do 
   let(:card) { Card.new('Ace', 'Spades') }
 
-  before do 
-    @card = Card.new('Ace', 'Spades')
-  end
-
   it 'has a rank and it can change' do
     expect(card.rank).to eq('Ace')
     card.rank = 'Queen'
